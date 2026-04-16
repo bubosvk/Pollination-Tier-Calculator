@@ -13,7 +13,7 @@ $error = null;
 $scoreData = null;
 
 // Level system configuration
-$threshold = 8.0; // Points required to qualify
+$threshold = 7.0; // Points required to qualify
 $maxPoints = 14.0; // Maximum possible points (6+5+2+1)
 
 $levelThresholds = [
@@ -99,8 +99,8 @@ if (!empty($username)) {
         // 2. Stars - 0.1 pts per star, max 5 points
         $starsPoints = min(5.0, round($totalStars * 0.1, 1));
 
-        // 3. Commits - 0.1 pts per commit, max 2 points
-        $commitsPoints = min(2.0, round($totalCommits * 0.1, 1));
+        // 3. Commits - 0.1 pts per commit, max 3 points
+        $commitsPoints = min(3.0, round($totalCommits * 0.1, 1));
 
         // 4. Repositories - 0.5 pts per original non-empty repo, max 1 point
         $repoPoints = min(1.0, round($validReposCount * 0.5, 1));
@@ -127,13 +127,13 @@ if (!empty($username)) {
         $pointsToQualify = max(0, $threshold - $totalPoints);
         
         // Determine the emoji based on qualification
-        $levelEmoji = ($totalPoints >= 8.0) ? '🌱' : '🍄';
+        $levelEmoji = ($totalPoints >= 7.0) ? '🌱' : '🍄';
 
         // Data for category breakdown
         $categories = [
             ['label' => 'Account Age', 'score' => $agePoints, 'max' => 6.0],
             ['label' => 'Stars', 'score' => $starsPoints, 'max' => 5.0],
-            ['label' => 'Commits', 'score' => $commitsPoints, 'max' => 2.0],
+            ['label' => 'Commits', 'score' => $commitsPoints, 'max' => 3.0],
             ['label' => 'Repositories', 'score' => $repoPoints, 'max' => 1.0],
         ];
 
