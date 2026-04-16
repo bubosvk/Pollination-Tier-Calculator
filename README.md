@@ -1,4 +1,4 @@
-# DEMO: https://lcars.sk/polli.php
+# DEMO: https://git.lebeda.app/polli.php
 ![Built with Pollinations](https://img.shields.io/badge/Built%20with-Pollinations-8a2be2?style=for-the-badge&logoColor=white&labelColor=6a0dad)
 
 ### 🌱 GitHub Tier Calculator for Pollinations.ai
