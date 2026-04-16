@@ -17,16 +17,16 @@
 
 ### 🧮 Scoring System
 
-- To qualify for the Seed Plan, a user needs to reach a threshold of 8.0 points. The maximum possible score is 14.0 points. The scoring is broken down as follows:
+- To qualify for the Seed Plan, a user needs to reach a threshold of 7.0 points. The maximum possible score is 14.0 points. The scoring is broken down as follows:
 
 | Metric            | Scoring Formula                       | Max points |
 |-------------------|---------------------------------------|------------|
 | Account age       | months × 0.5                          | 6.0        |
 | GitHub stars      | stars × 0.1                           | 5.0        |
-| Commits           | commits (last 90 days) × 0.1          | 2.0        |
+| Commits           | commits (last 90 days) × 0.1          | 3.0        |
 | Public repos      | original, non-empty repository × 0.5  | 1.0        |
 | **GitHub**        |                                       | **14.0**   |
-| **Pollination**   |                                       | **8.0**    |
+| **Pollination**   |                                       | **7.0**    |
 
 
 - Levels
